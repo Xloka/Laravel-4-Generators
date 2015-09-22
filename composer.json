@@ -1,6 +1,6 @@
 {
     "name": "xloka/generators",
-    "description": "Laravel 4 Generators w/ Bootstrap 3",
+    "description": "Laravel 4 Generators",
     "keywords": ["laravel", "generators", "artisan", "bootstrap", "scaffold"],
     "authors": [
         {
