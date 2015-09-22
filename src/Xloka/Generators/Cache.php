@@ -1,4 +1,6 @@
-<?php namespace Dollar\Generators;
+<?php 
+
+namespace Xloka\Generators;
 
 use Illuminate\Filesystem\Filesystem as File;
 

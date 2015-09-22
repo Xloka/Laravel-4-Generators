@@ -1,6 +1,6 @@
 <?php
 
-namespace Dollar\Generators\Generators;
+namespace Xloka\Generators\Generators;
 
 class MigrationGenerator extends Generator {
 

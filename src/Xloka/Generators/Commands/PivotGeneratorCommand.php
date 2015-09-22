@@ -1,4 +1,4 @@
-<?php namespace Dollar\Generators\Commands;
+<?php namespace Xloka\Generators\Commands;
 
 use Illuminate\Console\Command;
 use Symfony\Component\Console\Input\InputOption;

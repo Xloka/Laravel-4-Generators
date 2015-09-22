@@ -1,6 +1,6 @@
-<?php namespace Dollar\Generators\Commands;
+<?php namespace Xloka\Generators\Commands;
 
-use Dollar\Generators\Generators\MigrationGenerator;
+use Xloka\Generators\Generators\MigrationGenerator;
 use Illuminate\Console\Command;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Input\InputArgument;

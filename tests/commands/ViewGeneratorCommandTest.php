@@ -1,6 +1,6 @@
 <?php
 
-use Dollar\Generators\Commands\ViewGeneratorCommand;
+use Xloka\Generators\Commands\ViewGeneratorCommand;
 use Symfony\Component\Console\Tester\CommandTester;
 use Mockery as m;
 

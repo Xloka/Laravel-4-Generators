@@ -1,7 +1,7 @@
-<?php namespace Dollar\Generators\Commands;
+<?php namespace Xloka\Generators\Commands;
 
-use Dollar\Generators\Generators\ResourceGenerator;
-use Dollar\Generators\Cache;
+use Xloka\Generators\Generators\ResourceGenerator;
+use Xloka\Generators\Cache;
 use Illuminate\Console\Command;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Input\InputArgument;

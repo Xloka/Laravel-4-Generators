@@ -12,6 +12,11 @@
             "name": "Wes Dollar",
             "email": "github@wesdollar.com",
             "role": "Contributor"
+        },
+        {
+            "name": "Ahmed Saleh",
+            "email": "a.saleh.ismael@gmail.com",
+            "role": "Contributor"
         }
     ],
     "require": {
@@ -26,10 +31,10 @@
     },
     "autoload": {
         "psr-0": {
-            "Dollar\\Generators": "src/"
+            "Xloka\\Generators": "src/"
         },
         "classmap": [
-            "src/Dollar/Generators/Generators"
+            "src/Xloka/Generators/Generators"
         ]
     },
      "extra": {

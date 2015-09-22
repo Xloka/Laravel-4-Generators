@@ -1,6 +1,6 @@
-<?php namespace Dollar\Generators\Commands;
+<?php namespace Xloka\Generators\Commands;
 
-use Dollar\Generators\Generators\FormDumperGenerator;
+use Xloka\Generators\Generators\FormDumperGenerator;
 use Illuminate\Console\Command;
 use Mustache_Engine as Mustache;
 use Illuminate\Support\Pluralizer;

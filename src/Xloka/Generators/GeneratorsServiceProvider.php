@@ -1,8 +1,8 @@
-<?php namespace Dollar\Generators;
+<?php namespace Xloka\Generators;
 
-use Dollar\Generators\Commands;
-use Dollar\Generators\Generators;
-use Dollar\Generators\Cache;
+use Xloka\Generators\Commands;
+use Xloka\Generators\Generators;
+use Xloka\Generators\Cache;
 use Illuminate\Support\ServiceProvider;
 
 class GeneratorsServiceProvider extends ServiceProvider {

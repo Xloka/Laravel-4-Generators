@@ -1,8 +1,8 @@
 <?php
 
-namespace Dollar\Generators\Generators;
+namespace Xloka\Generators\Generators;
 
-use Dollar\Generators\Cache;
+use Xloka\Generators\Cache;
 use Illuminate\Filesystem\Filesystem as File;
 
 class RequestedCacheNotFound extends \Exception {}
