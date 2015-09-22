@@ -99,7 +99,7 @@ class {{className}} extends BaseController {
 	public function update($id)
 	{
 		$input = array_except(Input::all(), '_method');
-		$validation = Validator::make($input, {{Model}}::$rules);
+		$validation = Validator::make($input, {{Model}}::$editrules);
 
 		if ($validation->passes())
 		{

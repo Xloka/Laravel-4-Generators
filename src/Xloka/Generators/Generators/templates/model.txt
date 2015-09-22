@@ -4,4 +4,5 @@ class {{className}} extends Basemodel {
 	protected $guarded = array();
 
 	public static $rules = array();
+	public static $editrules = array();
 }

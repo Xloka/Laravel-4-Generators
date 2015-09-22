@@ -274,7 +274,7 @@ This will create the file, `app/models/Post.php` and insert the following boiler
 ```php
 <?php
 
-class Post extends Eloquent {
+class Post extends Basemodel {
 
 }
 ```
