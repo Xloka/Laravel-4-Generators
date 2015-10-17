@@ -1,12 +1,14 @@
 @extends('layouts.scaffold')
 
 @section('main')
-
+<div class="mdl-grid">
+    <div class="mdl-cell mdl-cell--1-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+    <div class="mdl-cell mdl-cell--10-col mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800">
 <h1>Show {{Model}}</h1>
 
-<p>{{ link_to_route('{{models}}.index', 'Return to All {{models}}', null, array('class'=>'btn btn-lg btn-primary')) }}</p>
+<p>{{ link_to_route('{{models}}.index', 'Return to All {{models}}', null, array('class'=>'mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent')) }}</p>
 
-<table class="table table-striped">
+<table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp">
 	<thead>
 		<tr>
 			{{headings}}
@@ -19,5 +21,7 @@
 		</tr>
 	</tbody>
 </table>
-
+</div>
+  <div class="mdl-cell mdl-cell--1-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+  </div>
 @stop
