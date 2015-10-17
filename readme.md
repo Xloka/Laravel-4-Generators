@@ -1,6 +1,6 @@
 ### Forked from JeffreyWay/Laravel-4-Generators.
 
-This package updates the views provided by Jeffrey Way's original works to Bootstrap 3. The original documentation from Way's works follows. The instructions have been updated to reflect any changes within this package.
+This package updates the views provided by Jeffrey Way's original works to Material Design Lite. The original documentation from Way's works follows. The instructions have been updated to reflect any changes within this package.
 
 This Laravel 4 package provides a variety of generators to speed up your development process. These generators include:
 
