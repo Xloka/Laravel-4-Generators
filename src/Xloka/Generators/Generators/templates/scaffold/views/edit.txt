@@ -2,8 +2,9 @@
 
 @section('main')
 
-<div class="row">
-    <div class="col-md-10 col-md-offset-2">
+<div class="mdl-grid">
+    <div class="mdl-cell mdl-cell--1-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+    <div class="mdl-cell mdl-cell--10-col mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800">
         <h1>Edit {{Model}}</h1>
 
         @if ($errors->any())
@@ -13,21 +14,21 @@
                 </ul>
         	</div>
         @endif
-    </div>
-</div>
+  
 
 {{ Form::model(${{model}}, array('class' => 'form-horizontal', 'method' => 'PATCH', 'route' => array('{{models}}.update', ${{model}}->id))) }}
 
 {{formElements}}
 
-<div class="form-group">
-    <label class="col-sm-2 control-label">&nbsp;</label>
-    <div class="col-sm-10">
-      {{ Form::submit('Update', array('class' => 'btn btn-lg btn-primary')) }}
-      {{ link_to_route('{{models}}.show', 'Cancel', ${{model}}->id, array('class' => 'btn btn-lg btn-default')) }}
-    </div>
-</div>
+
+ 
+      {{ Form::submit('Update', array('class' => 'mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent')) }}
+      {{ link_to_route('{{models}}.show', 'Cancel', ${{model}}->id, array('class' => mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent')) }}
+
+
 
 {{ Form::close() }}
-
+  </div>
+</div>
+  <div class="mdl-cell mdl-cell--1-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
 @stop
