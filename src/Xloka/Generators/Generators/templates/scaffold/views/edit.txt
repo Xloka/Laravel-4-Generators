@@ -23,7 +23,7 @@
 
  
       {{ Form::submit('Update', array('class' => 'mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent')) }}
-      {{ link_to_route('{{models}}.show', 'Cancel', ${{model}}->id, array('class' => mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent')) }}
+      {{ link_to_route('{{models}}.show', 'Cancel', ${{model}}->id, array('class' => 'mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent')) }}
 
 
 
