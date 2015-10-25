@@ -88,9 +88,9 @@ class ViewGenerator extends Generator {
         $editAndDelete = <<<EOT
                     <td>
                         {{ Form::open(array('style' => 'display: inline-block;', 'method' => 'DELETE', 'route' => array('{$models}.destroy', \${$model}->id))) }}
-                            {{ Form::submit('Delete', array('class' => 'btn btn-danger')) }}
+                            {{ Form::submit('Delete', array('class' => 'mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent')) }}
                         {{ Form::close() }}
-                        {{ link_to_route('{$models}.edit', 'Edit', array(\${$model}->id), array('class' => 'btn btn-info')) }}
+                        {{ link_to_route('{$models}.edit', 'Edit', array(\${$model}->id), array('class' => 'mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent')) }}
                     </td>
 EOT;
 
@@ -115,11 +115,11 @@ EOT;
             switch($type)
             {
                 case 'integer':
-                   $element = "{{ Form::input('number', '$name', Input::old('$name'), array('class'=>'form-control')) }}";
+                   $element = "{{ Form::input('number', '$name', Input::old('$name'), array('class'=>'mdl-textfield__input')) }}";
                     break;
 
                 case 'text':
-                    $element = "{{ Form::textarea('$name', Input::old('$name'), array('class'=>'form-control', 'placeholder'=>'$formalName')) }}";
+                    $element = "{{ Form::textarea('$name', Input::old('$name'), array('class'=>'mdl-textfield__input')) }}";
                     break;
 
                 case 'boolean':
@@ -127,19 +127,17 @@ EOT;
                     break;
 
                 default:
-                    $element = "{{ Form::text('$name', Input::old('$name'), array('class'=>'form-control', 'placeholder'=>'$formalName')) }}";
+                    $element = "{{ Form::text('$name', Input::old('$name'), array('class'=>'mdl-textfield__input')) }}";
                     break;
             }
 
             // Now that we have the correct $element,
             // We can build up the HTML fragment
             $frag = <<<EOT
-        <div class="form-group">
-            {{ Form::label('$name', '$formalName:', array('class'=>'col-md-2 control-label')) }}
-            <div class="col-sm-10">
-              $element
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            $element
+            {{ Form::label('$name', '$formalName:', array('class'=>'mdl-textfield__label')) }}
             </div>
-        </div>
 
 EOT;
 
